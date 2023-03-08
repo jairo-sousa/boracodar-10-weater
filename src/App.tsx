@@ -1,7 +1,14 @@
+import { Flex } from "@chakra-ui/react";
+
 export function App() {
 	return (
-		<div className="App">
-			<h1>TODO APP</h1>
-		</div>
+		<Flex
+			w="100%"
+			h="100%"
+			backgroundImage="url('/appBg.svg')"
+			backgroundSize="cover"
+		>
+			TODO
+		</Flex>
 	);
 }
