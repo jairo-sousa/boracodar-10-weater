@@ -1,5 +1,6 @@
 import { Flex, Img, Text } from "@chakra-ui/react";
 import { Point } from "./Point";
+import { TemperatureNow } from "./TemperatureNow";
 
 export function Temperature() {
 	return (
@@ -16,6 +17,8 @@ export function Temperature() {
 			justify="space-between"
 		>
 			<Point />
+
+			<TemperatureNow />
 		</Flex>
 	);
 }
