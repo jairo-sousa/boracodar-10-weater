@@ -18,6 +18,7 @@ export function Temperature() {
 			borderRadius="1rem"
 			align="center"
 			justify="space-between"
+			pos="relative"
 		>
 			<Point />
 
@@ -36,6 +37,8 @@ export function Temperature() {
 					);
 				})}
 			</Flex>
+
+			<Img src="/cloud.svg" pos="absolute" top="-5.6rem" left="-5.6rem" />
 		</Flex>
 	);
 }
