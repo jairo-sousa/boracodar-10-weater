@@ -1,4 +1,5 @@
 import { Flex } from "@chakra-ui/react";
+import { Temperature } from "./components/Temperature/Temperature";
 
 export function App() {
 	return (
@@ -7,8 +8,10 @@ export function App() {
 			h="100%"
 			backgroundImage="url('/appBg.svg')"
 			backgroundSize="cover"
+			justify="center"
+			align="center"
 		>
-			TODO
+			<Temperature />
 		</Flex>
 	);
 }
