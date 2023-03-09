@@ -1,6 +1,9 @@
 import { Flex, Img, Text } from "@chakra-ui/react";
+import { OtherInfo } from "./OtherInfo";
 import { Point } from "./Point";
 import { TemperatureNow } from "./TemperatureNow";
+
+import { OtherInfosData } from "../../utils/OtherInfosData";
 
 export function Temperature() {
 	return (
@@ -19,6 +22,20 @@ export function Temperature() {
 			<Point />
 
 			<TemperatureNow />
+
+			<Flex gap="0.8rem">
+				{OtherInfosData.map((info, i) => {
+					return (
+						<OtherInfo
+							key={`${info.title} - ${i}`}
+							img={info.img}
+							title={info.title}
+							value={info.value}
+							measure={info.measure}
+						/>
+					);
+				})}
+			</Flex>
 		</Flex>
 	);
 }
