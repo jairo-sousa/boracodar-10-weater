@@ -1,6 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import { AirQuality } from "./components/AirQuality/AirQuality";
 import { Temperature } from "./components/Temperature/Temperature";
+import { SunTime } from "./components/SunTime";
 
 export function App() {
 	return (
@@ -14,8 +15,9 @@ export function App() {
 			gap="3.2rem"
 		>
 			<Temperature />
-			<Flex gap="3.2">
+			<Flex gap="3.2rem">
 				<AirQuality />
+				<SunTime />
 			</Flex>
 		</Flex>
 	);
